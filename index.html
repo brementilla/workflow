@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workflow Builder - A seamless way to automate and streamline workflows.">
+    <title>Workflow Builder | Nards Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <main class="w-full relative flex flex-col justify-center items-center p-[28px]">
+
+        <section class="mb-4" aria-labelledby="workflow-builder" tabindex="1">
+            <h1>Workflow Builder</h1>
+        </section>
+
+        <!-- Entry Trigger -->
+        <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="entry-trigger" tabindex="2">
+            <div class="flex justify-between items-center">
+                <span class="bg-[#DF1B7A] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                    <img src="images/play_arrow.svg" alt="Play Arrow" width="20" height="20" />
+                    Trigger
+                </span>
+                <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="3">
+                    <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                </button>
+            </div>
+            <p class="text-base text-[#031131] pt-2">Entry</p>
+            <hr class="my-3 border border-[#D9D9D9]">
+            <div class="flex justify-between items-center">
+                <p class="text-sm text-[#6A7081]">Empty action</p>
+                <img src="images/Warning.svg" alt="Warning icon indicating an empty action" width="16" height="16" class="bg-[#FFECB2] rounded-full"/>
+            </div>
+        </section>
+        
+        <!-- Connector -->
+        <section aria-labelledby="connector">
+            <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+        </section>
+
+        <!-- Notification -->
+        <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="notification" tabindex="4">
+            <div class="flex justify-between items-center">
+                <span class="bg-[#6A7081] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                    <img src="images/mail.svg" alt="Mail" width="20" height="20" />
+                    Notification
+                </span>
+                <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="5">
+                    <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                </button>
+            </div>
+            <p class="text-base text-[#031131] pt-2">Notification</p>
+            <hr class="my-3 border border-[#D9D9D9]">
+            <div class="flex justify-between items-center">
+                <p class="text-sm text-[#6A7081]">Empty action</p>
+                <img src="images/Warning.svg" alt="Warning icon indicating an empty action" width="16" height="16" class="bg-[#FFECB2] rounded-full"/>
+            </div>
+        </section>
+
+        <!-- Connector -->
+        <section aria-labelledby="connector">
+            <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+        </section>
+        
+        <!-- Approval + Escalation -->
+        <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="approval-escalation" tabindex="6">
+            <div class="flex justify-between items-center">
+                <span class="bg-[#65975C] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                    <img src="images/check.svg" alt="Approve Check" width="20" height="20" />
+                    Approval
+                </span>
+                <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="7">
+                    <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                </button>
+            </div>
+            <p class="text-base text-[#031131] pt-2">Approval + Escalation</p>
+            <hr class="my-3 border border-[#D9D9D9]">
+            <div class="flex justify-between items-center">
+                <p class="text-sm text-[#6A7081]">Empty action</p>
+                <img src="images/Warning.svg" alt="Warning icon indicating an empty action" width="16" height="16" class="bg-[#FFECB2] rounded-full"/>
+            </div>
+        </section>
+        
+        <!-- Connector -->
+        <section aria-labelledby="connector">
+            <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+        </section>
+
+        <!-- Liquidity Check Condition -->
+        <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="liquidity-check-condition" tabindex="8">
+            <div class="flex justify-between items-center">
+                <span class="bg-[#2E739E] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                    <img src="images/line_start_diamond.svg" alt="Line Start" width="20" height="20" />
+                    Condition
+                </span>
+                <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="9">
+                    <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                </button>
+            </div>
+            <p class="text-base text-[#031131] pt-2">Liquidity Check</p>
+            <hr class="my-3 border border-[#D9D9D9]">
+            <div class="flex justify-between items-center">
+                <p class="text-sm text-[#031131]">Check something or decide something</p>
+            </div>
+        </section>
+
+        <!-- Connectors -->
+        <section class="hidden lg:flex lg:justify-between lg:items-center lg:gap-x-24 relative z-20" aria-labelledby="connectors">
+            <div class="flex flex-col items-start">
+                <!-- Curve Connector -->
+                <img src="images/Connector-left.svg" class="hidden lg:block" alt="Connector Left" width="210" height="75"/>
+                <img src="images/check-approve.svg" class="relative sm:right-0 lg:right-2" alt="Check Approve" width="20" height="20"/>
+            </div>
+            <div class="flex flex-col items-end">
+                <!-- Curve Connector -->
+                <img src="images/Connector-right.svg" class="hidden lg:block" alt="Connector Right" width="210" height="75"/>
+                <!-- Single Connector -->
+                <img src="images/Connector.svg" class="block lg:hidden" alt="Connector" width="20" height="43"/>
+                <img src="images/cross-deny.svg"  class="relative sm:left-0 lg:left-2" alt="Cross Deny" width="20" height="20"/>
+            </div>
+        </section>
+        
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-2 gap-x-4 lg:flex lg:flex-row lg:gap-x-48 md:items-center md:justify-between lg:justify-center w-full relative lg:bottom-3 z-10">
+            <!-- Deny Inquiry -->
+            <div class="flex flex-col items-center justify-center">
+                <!-- Mobile Single Connector -->
+                <section class="block lg:hidden" aria-labelledby="connector">
+                    <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+                    <img src="images/check-approve.svg" class="relative sm:right-0 lg:right-2" alt="Check Approve" width="20" height="20"/>
+                </section>
+                <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="approval" tabindex="10">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-[#65975C] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                            <img src="images/check.svg" alt="Approve Check" width="20" height="20" />
+                            Approval
+                        </span>
+                        <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="11">
+                            <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                        </button>
+                    </div>
+                    <p class="text-base text-[#031131] pt-2">Deny inquiry</p>
+                    <hr class="my-3 border border-[#D9D9D9]">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm text-[#031131]">Liquidity check negative</p>
+                        <img src="images/alarm_on.svg" alt="Alarm On" width="16" height="16"/>
+                    </div>
+                </section>
+
+                <!-- Connector -->
+                <section aria-labelledby="connector">
+                    <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+                </section>
+
+                <!-- Notification for Deny Inquiry -->
+                <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="notification" tabindex="12">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-[#6A7081] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                            <img src="images/mail.svg" alt="Mail" width="20" height="20" />
+                            Notification
+                        </span>
+                        <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="13">
+                            <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                        </button>
+                    </div>
+                    <p class="text-base text-[#031131] pt-2">Notification</p>
+                    <hr class="my-3 border border-[#D9D9D9]">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm text-[#6A7081]">Empty action</p>
+                        <img src="images/Warning.svg" alt="Warning icon indicating an empty action" width="16" height="16" class="bg-[#FFECB2] rounded-full"/>
+                    </div>
+                </section>
+            </div>
+            <!-- Notify Max Mustermann -->
+            <div class="flex flex-col items-center justify-center">
+                <!-- Mobile Single Connector -->
+                <section class="block lg:hidden" aria-labelledby="connector">
+                    <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+                    <img src="images/cross-deny.svg"  class="relative sm:left-0 lg:left-2" alt="Cross Deny" width="20" height="20"/>
+                </section>
+                <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="approval" tabindex="14">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-[#65975C] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                            <img src="images/check.svg" alt="Approve Check" width="20" height="20" />
+                            Approval
+                        </span>
+                        <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="15">
+                            <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                        </button>
+                    </div>
+                    <p class="text-base text-[#031131] pt-2">Notify Max Mustermann</p>
+                    <hr class="my-3 border border-[#D9D9D9]">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm text-[#031131]">Liquidity check successful</p>
+                    </div>
+                </section>
+
+                <!-- Connector -->
+                <section aria-labelledby="connector">
+                    <img src="images/Connector.svg" alt="Connector" width="20" height="43"/>
+                </section>
+
+                <!-- Notification for Notify Max Mustermann -->
+                <section class="border border-[#D9D9D9] rounded p-4 bg-white relative h-full w-full lg:w-80" aria-labelledby="notification" tabindex="16">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-[#6A7081] text-white pr-[4px] py-[1px] text-xs leading-6 rounded flex gap-0.5">
+                            <img src="images/mail.svg" alt="Mail" width="20" height="20" />
+                            Notification
+                        </span>
+                        <button id="menuButton" class="ph ph-dots-three-vertical text-[#6A7081] before:text-[25px]"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown" tabindex="17">
+                            <span class="sr-only">Open menu</span> <!-- Screen reader text -->
+                        </button>
+                    </div>
+                    <p class="text-base text-[#031131] pt-2">Notification</p>
+                    <hr class="my-3 border border-[#D9D9D9]">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm text-[#6A7081]">Empty action</p>
+                        <img src="images/Warning.svg" alt="Warning icon indicating an empty action" width="16" height="16" class="bg-[#FFECB2] rounded-full"/>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
